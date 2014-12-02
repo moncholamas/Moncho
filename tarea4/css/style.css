@@ -19,10 +19,10 @@ header{
 	position: relative;
 	background-color: #222;
 	color: #FFF;
-
 }
 nav{
 	text-align: center;
+	margin-top: 10px,
 }
 nav ul li{
 	display: inline-block;
@@ -30,6 +30,9 @@ nav ul li{
 nav ul a{
 	color: #FFF;
 	text-decoration: none;
+	background-color: #555;
+	display: block;
+	padding: 15px;
 }
 p{
 	padding: 20px 35px; 
