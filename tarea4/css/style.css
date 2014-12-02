@@ -20,9 +20,12 @@ header{
 	background-color: #222;
 	color: #FFF;
 }
+h1{
+	font-size: 20px;
+}
 nav{
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 12px;
 }
 nav ul li{
 	display: inline-block;
@@ -33,7 +36,7 @@ nav ul a{
 	background-color: #444;
 	display: block;
 	padding: 15px;
-	min-width:50px; 
+	min-width:60px; 
 }
 p{
 	padding: 20px 35px; 
@@ -56,16 +59,24 @@ div.subcontenedor{
 	width: 960px;
 	border: none;
 	background-color: #30b9db;
+	position: relative;
 }
-div.container_12 > div{
+div.subcontenedor img{
+	margin: 15px;
+	width: 200px;
+}
+div.subcontenedor:after{
+
+}
+div.container_12 div{
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
 div.video{
-	background-color: #666;
+	background-color: #2d799c;
 }
 div.descrip_video{
-	background-color: #111;
+	background-color: #0a5e82;
 	color: #DDD;
 	position: relative;
 }
@@ -78,9 +89,37 @@ div.descrip_video:after{
 	width: 0;
 	height: 0;
 	border-top: 128px solid transparent;
-	border-right: 20px solid #111;
+	border-right: 20px solid #0a5e82;
 	border-bottom: 128px solid transparent;
+}
+/*Modifico la altura y el ancho para no retocar las imagenes, no tengo tiempo :P*/
+.columna img{
+	width: 300px;
+	height: 250px;
+	-webkit-filter: blur(2px) brightness(1.1) sepia(0.1);
+	transition:all 0.3s 0.3s;
+}
+.columna:hover img{
+	-webkit-filter: blur(0px) brightness(1) sepia(0);
 }
 .columna{
 	background-color: #FAFAFA;
+}
+.cita > div:after{
+	content: '"';
+	font-size: 300px;
+	position: absolute;
+	top: -40px;
+	right: -60px;
+	z-index: 999;
+	color: #FFF;
+}
+.cita > div:first-child:before{
+	content: '"';
+	font-size: 300px;
+	position: absolute;
+	top: 40px;
+	right: 60px;
+	z-index: 999;
+	color: #FFF;
 }
