@@ -23,6 +23,7 @@ div.head{
 	z-index: 9999;
 	left: 50%;
 	margin-left: -480px;
+	box-shadow:  0px 0px 2px #222;
 }
 div#cabeza{
 	margin: 0 auto;
@@ -44,10 +45,14 @@ h1{
 .nav ul a{
 	color: #FFF;
 	text-decoration: none;
-	background-color: #65D100;
 	display: block;
 	padding: 15px;
 	min-width:60px; 
+	transition: all 0.2s 0.3s;
+}
+.nav a:hover{
+	background-color: #65D100;
+	box-shadow:  0px 0px 3px #666;
 }
 p{
 	padding: 20px 35px; 
@@ -58,10 +63,13 @@ h1,h2,h3,h4,h5{
 .extendido{
 	width: 100%;
 	background-color: #30b9db;
+	box-shadow: inset 0px 0px 15px rgba(14,63,77,1);
 }
 div.cita img{
 	margin: 15px;
-	width: 200px;
+	width: 180px;
+	border: dashed 1px #222;
+	padding: 15px;
 }
 div.container_12{
 	position: relative;
@@ -78,19 +86,19 @@ div.descrip_video{
 	background-color: #222;
 	color: #DDD;
 	position: relative;
-	min-height: 480px;
+	min-height: 470px;
 }
 div.descrip_video:after{
 	content: "";
 	z-index: 1000;
 	position: absolute;
 	top: 0;	
-	left: 0;
+	left: -20px;
 	width: 0;
 	height: 0;
-	border-top: 240px solid transparent;
-	border-left: 20px solid #333;
-	border-bottom: 240px solid transparent;
+	border-top: 235px solid transparent;
+	border-right: 20px solid #222;
+	border-bottom: 235px solid transparent;
 }
 /*Modifico la altura y el ancho para no retocar las imagenes, no tengo tiempo :P*/
 .columna img{
@@ -105,11 +113,63 @@ div.descrip_video:after{
 .columna{
 	background-color: #FAFAFA;
 }
+/*Cita*/
+.contcita{
+	position: relative;
+}
+.contcita:after{
+	content: ">>";
+	color: rgba(14,63,77,1);
+	z-index: 2;
+	position: absolute;
+	top: 80px;
+	right: 40px;
+	font-size: 100px;
+	text-shadow:3px 0px 15px rgba(14,63,77,1);
+}
+.contcita:before{
+	content: "<<";
+	color: rgba(14,63,77,1);
+	z-index: 2;
+	position: absolute;
+	top: 80px;
+	left: 40px;
+	font-size: 100px;
+	text-shadow:3px 0px 15px rgba(14,63,77,1);
+}
+/*pie de pagina*/
+.footer{
+	min-height: 587px;
+	color: #FFF;
+}
+.footer a{
+	color: #FFF;
+	text-decoration: none;
+	line-height: 2;
+	margin-left: 25px;
+	transition: all 0.2s 0.3s;
+}
+.footer a:hover{
+	text-shadow:0px 0px 5px #ddd;
+}
+.footer ul{
+	transition: all 0.2s 0.3s;
+	padding: 20px 0;
+}
+.footer ul:hover{
+	box-shadow: 0px 0px 4px #ccc;
+}
+.footer div.grid_3{
+	margin-top: 100px;
+	vertical-align: middle;
+	padding-top: 100px;
+}
+/* anclas */
 .ancla{
 	position: absolute;
 	top: -120px;
 	left:-5px;
-	background-color: red;
 	height: 5px;
 	width: 40px;
+	visibility: hidden;
 }
