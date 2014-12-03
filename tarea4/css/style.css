@@ -104,3 +104,11 @@ div.descrip_video:after{
 .columna{
 	background-color: #FAFAFA;
 }
+.ancla{
+	position: absolute;
+	top: -120px;
+	left:-5px;
+	background-color: red;
+	height: 5px;
+	width: 40px;
+}
