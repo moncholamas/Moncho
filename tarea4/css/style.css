@@ -1,11 +1,10 @@
 *{
-	outline:0px solid #222;
+	outline:1px solid #222;
 }
 html{
 	height: auto;
 }
 body{
-	width: auto;
 	background: rgba(73,165,191,1);
 background: -moz-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(0,45,56,1) 66%, rgba(14,63,77,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,165,191,1)), color-stop(66%, rgba(0,45,56,1)), color-stop(100%, rgba(14,63,77,1)));
@@ -15,22 +14,33 @@ background: -ms-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(0,45,56,1) 66%,
 background: linear-gradient(to bottom, rgba(73,165,191,1) 0%, rgba(0,45,56,1) 66%, rgba(14,63,77,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a5bf', endColorstr='#0e3f4d', GradientType=0 );
 }
-header{
-	position: relative;
+div.head{
+	position: fixed;
+	top: 0;
 	background-color: #69DA00;
 	color: #FFF;
+	width:960px;
+	z-index: 9999;
+	left: 50%;
+	margin-left: -480px;
+}
+div#cabeza{
+	margin: 0 auto;
+	position: relative;
 }
 h1{
 	font-size: 20px;
+	color: #FFF;
+	margin: 0;
 }
-nav{
+.nav{
 	text-align: center;
 	margin-top: 12px;
 }
-nav ul li{
+.nav ul li{
 	display: inline-block;
 }
-nav ul a{
+.nav ul a{
 	color: #FFF;
 	text-decoration: none;
 	background-color: #65D100;
@@ -45,30 +55,18 @@ h1,h2,h3,h4,h5{
 	padding: 25px;
 }	
 .extendido{
-	background:none;
 	width: 100%;
 	background-color: #30b9db;
 }
-div.container_12{
-	margin: 0 auto;
-	min-height: 250px;
-	background-color: #FFF;
-}
-div.subcontenedor{
-	margin:0 auto;
-	width: 960px;
-	border: none;
-	background-color: #30b9db;
-	position: relative;
-}
-div.subcontenedor img{
+div.cita img{
 	margin: 15px;
 	width: 200px;
 }
-div.subcontenedor:after{
-
+div.container_12{
+	position: relative;
+	margin: 0 auto;
 }
-div.container_12 div{
+div.container_12 > div:not(.head){
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -90,7 +88,7 @@ div.descrip_video:after{
 	width: 0;
 	height: 0;
 	border-top: 240px solid transparent;
-	border-left: 20px solid #000;
+	border-left: 20px solid #333;
 	border-bottom: 240px solid transparent;
 }
 /*Modifico la altura y el ancho para no retocar las imagenes, no tengo tiempo :P*/
@@ -105,22 +103,4 @@ div.descrip_video:after{
 }
 .columna{
 	background-color: #FAFAFA;
-}
-.cita > div:after{
-	content: '"';
-	font-size: 300px;
-	position: absolute;
-	top: -40px;
-	right: -60px;
-	z-index: 999;
-	color: #FFF;
-}
-.cita > div:first-child:before{
-	content: '"';
-	font-size: 300px;
-	position: absolute;
-	top: 40px;
-	right: 60px;
-	z-index: 999;
-	color: #FFF;
 }
