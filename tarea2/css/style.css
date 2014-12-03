@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #ddd;
+	background-size: 100%;
+	background-image: url("../img/fondo.jpeg");
+	min-height: 100%;
+	position:relative;
+}
+
+div{
+	
+}
+
+img.animate{
+	-webkit-filter: brightness(0.8);
+    -webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
+    animation: myfirst 2s;
+    -webkit-transition: 2s -webkit-filter linear;
+	transition: 2s -webkit-filter linear;
+	transition: all 1s;
+	height: 200px;	
+}
+img.animate:hover{
+	-webkit-filter: brightness(1.1);
+	transform:scale(1.2);
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0% {
+    	-webkit-filter: blur(15px) brightness(1.2);
+
+    }
+    100% {-webkit-filter: blur(0px) brightness(0.8);
+    }
+}
