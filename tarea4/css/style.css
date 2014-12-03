@@ -6,18 +6,18 @@ html{
 }
 body{
 	width: auto;
-	background: rgba(48,185,219,1);
-background: -moz-linear-gradient(top, rgba(48,185,219,1) 0%, rgba(29,143,171,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,185,219,1)), color-stop(100%, rgba(29,143,171,1)));
-background: -webkit-linear-gradient(top, rgba(48,185,219,1) 0%, rgba(29,143,171,1) 100%);
-background: -o-linear-gradient(top, rgba(48,185,219,1) 0%, rgba(29,143,171,1) 100%);
-background: -ms-linear-gradient(top, rgba(48,185,219,1) 0%, rgba(29,143,171,1) 100%);
-background: linear-gradient(to bottom, rgba(48,185,219,1) 0%, rgba(29,143,171,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30b9db', endColorstr='#1d8fab', GradientType=0 );
+	background: rgba(73,165,191,1);
+background: -moz-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(0,45,56,1) 66%, rgba(14,63,77,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,165,191,1)), color-stop(66%, rgba(0,45,56,1)), color-stop(100%, rgba(14,63,77,1)));
+background: -webkit-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(0,45,56,1) 66%, rgba(14,63,77,1) 100%);
+background: -o-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(0,45,56,1) 66%, rgba(14,63,77,1) 100%);
+background: -ms-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(0,45,56,1) 66%, rgba(14,63,77,1) 100%);
+background: linear-gradient(to bottom, rgba(73,165,191,1) 0%, rgba(0,45,56,1) 66%, rgba(14,63,77,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a5bf', endColorstr='#0e3f4d', GradientType=0 );
 }
 header{
 	position: relative;
-	background-color: #222;
+	background-color: #69DA00;
 	color: #FFF;
 }
 h1{
@@ -33,7 +33,7 @@ nav ul li{
 nav ul a{
 	color: #FFF;
 	text-decoration: none;
-	background-color: #444;
+	background-color: #65D100;
 	display: block;
 	padding: 15px;
 	min-width:60px; 
@@ -73,24 +73,25 @@ div.container_12 div{
 	margin-bottom: 40px;
 }
 div.video{
-	background-color: #2d799c;
+	background-color: #333;
 }
 div.descrip_video{
-	background-color: #0a5e82;
+	background-color: #222;
 	color: #DDD;
 	position: relative;
+	min-height: 480px;
 }
 div.descrip_video:after{
 	content: "";
 	z-index: 1000;
 	position: absolute;
 	top: 0;	
-	left: -20px;
+	left: 0;
 	width: 0;
 	height: 0;
-	border-top: 128px solid transparent;
-	border-right: 20px solid #0a5e82;
-	border-bottom: 128px solid transparent;
+	border-top: 240px solid transparent;
+	border-left: 20px solid #000;
+	border-bottom: 240px solid transparent;
 }
 /*Modifico la altura y el ancho para no retocar las imagenes, no tengo tiempo :P*/
 .columna img{
