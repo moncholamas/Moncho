@@ -1,5 +1,5 @@
 *{
-	outline:1px solid #222;
+	outline:0px solid #222;
 }
 html{
 	height: auto;
@@ -27,6 +27,7 @@ div.head{
 div#cabeza{
 	margin: 0 auto;
 	position: relative;
+	height: 80px;
 }
 h1{
 	font-size: 20px;
