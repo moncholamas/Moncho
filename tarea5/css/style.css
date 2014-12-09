@@ -1,0 +1,130 @@
+@import url("960_12_col.css")  (min-width: 960px);/*Esta linea incorpora el estilo de 960gs para resoluciones de 960+*/
+/*El primer estilo es para resoluciones de 480px;*/
+*{
+	outline: 0px solid #222	;
+		
+}
+body{
+	background-color: #EEE;
+	min-height: 500px;
+	height: auto;
+}
+div.head{
+	background-color: #2C73BA;
+	color: #FFF;
+}
+div.head h1{
+	padding: 1em;
+}
+h2,h3,h4{
+	padding: 0.5em;
+}
+div.head ul li{
+	text-align: center;
+}
+div.head a{
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+}
+div.head nav{
+	display: none;
+}
+p.caracteristica{
+	font-size: 0.75em;
+	padding: 0.5em;
+}
+div.imagen{
+	background-image: url("../img/fondo480.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 10px;
+	height: 120px;
+}
+div.main{
+	background-color: #222;
+}
+div.carrito{
+	background-color: #222;
+}
+div.producto a{
+	background-color: #222;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	box-shadow: inset 0px 0px 5px #555;
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+}
+p.inactivo{
+	display: block;
+	text-align: center;
+	color: #666;
+	padding: 2em;
+}
+div.producto h3{
+	background-color: #2C73BA;
+	color: #FFF;
+}
+div.footer{
+	background-color: #EEE;
+	min-height: 100px;
+	color: #333;
+}
+
+
+@media (min-width: 960px) {
+	div.imagen{
+		background-image: url("../img/fondo960.jpg");
+	}
+	div.head{
+		
+	}
+	div.head nav{
+		display: block;
+	}
+	div.head li{
+		display: inline-block;
+	}
+	div.head a{
+		padding: 1em;
+	}
+	div.head a.actual{
+		background-color: #EEE;
+		color: #2C73BA;
+	}
+	div.principal{
+		box-shadow: 0px 0px 10px #666;
+		margin-top: 1em;
+		min-height: 500px;
+	}
+	div.carrito{
+		margin-top: 0.5em;
+		border:dashed 1px #666;
+	}
+	div.producto{
+		outline: 1px solid #2C73BA;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		padding-top: 0.5em;
+		position: relative;
+		background-color: #333;
+		color: #EEE;
+	}
+	div.producto h3{
+		position: absolute;
+		top: -1.5em;
+		left: 3em;
+		padding: 0.3em 4em;
+	}
+	div.imgprod{
+		width: 80px;
+		height: 80px;
+		border: dashed 1px #666;
+		margin: 0.5em;
+		float: left;
+	}
+	div.caracteristica{
+		margin-bottom: 1em;
+	}
+}
