@@ -5,16 +5,34 @@
 		
 }
 body{
-	background-color: #EEE;
-	min-height: 500px;
+	min-height: auto;
 	height: auto;
+	background-color: #EEE;
+}
+div.section{
+	background-color: #222;
 }
 div.head{
-	background-color: #2C73BA;
+	background-color: #222;
+	background-image: url("../img/fondo480.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 	color: #FFF;
+	min-height: 80px;
 }
-div.head h1{
+div.menu{
+	background-color: rgba(20,150,220,0.5);
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+	font-size: 1em;
+	padding: 1.2em;
+	line-height: 1;
+	transform:rotate(90deg);
+}
+h1{
 	padding: 1em;
+	font-size: 1.3em;
 }
 h2,h3,h4{
 	padding: 0.5em;
@@ -26,16 +44,19 @@ div.head a{
 	color: #FFF;
 	text-decoration: none;
 	display: block;
+	padding: 0.5em;	
 }
-div.head nav{
+nav{
 	display: none;
+	background-color: #2C73BA;
+	margin-top: 1.5em;
 }
 p.caracteristica{
 	font-size: 0.75em;
 	padding: 0.5em;
 }
 div.imagen{
-	background-image: url("../img/fondo480.jpg");
+	display: none;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	min-height: 10px;
@@ -47,14 +68,27 @@ div.main{
 div.carrito{
 	background-color: #222;
 }
-div.producto a{
-	background-color: #222;
+.boton{
 	display: inline-block;
 	padding: 0.2em 0.5em;
-	box-shadow: inset 0px 0px 5px #555;
-	color: #333;
+	color: #FFF;
 	text-decoration: none;
 	text-align: center;
+	transition:all 0.5s;
+}
+.producto{
+	position: relative;
+}
+.producto ul{
+	position: absolute;
+	top: 0.2em;
+	right: 0.2em;
+}
+.producto li{
+	display: inline-block;
+}
+.breve{
+	display: none;
 }
 p.inactivo{
 	display: block;
@@ -68,30 +102,47 @@ div.producto h3{
 }
 div.footer{
 	background-color: #EEE;
-	min-height: 100px;
+	min-height: 50px;
 	color: #333;
+	margin-bottom: 0;
 }
-
+div.caracteristica{
+		margin-bottom: 1em;
+		display: none;
+	}
+.selected{
+		background-color: #222;
+		color: #2C73BA;
+	}
 
 @media (min-width: 960px) {
+	body{
+		background-color: #EEE;
+	}
+	div.menu{
+		display: none;
+	}
 	div.imagen{
-		background-image: url("../img/fondo960.jpg");
+		background:none;
+		display: none;
 	}
 	div.head{
-		
+		background-image: url("../img/fondo960.jpg");
+		min-height: 150px;
+	}
+	h1{
+		font-size: 1.5em;
 	}
 	div.head nav{
 		display: block;
+		background-color: rgba(20,150,220,0.5);
+		margin-top:0.5em;
 	}
 	div.head li{
 		display: inline-block;
 	}
 	div.head a{
 		padding: 1em;
-	}
-	div.head a.actual{
-		background-color: #EEE;
-		color: #2C73BA;
 	}
 	div.principal{
 		box-shadow: 0px 0px 10px #666;
@@ -107,7 +158,6 @@ div.footer{
 		margin-top: 2em;
 		margin-bottom: 1em;
 		padding-top: 0.5em;
-		position: relative;
 		background-color: #333;
 		color: #EEE;
 	}
@@ -124,7 +174,25 @@ div.footer{
 		margin: 0.5em;
 		float: left;
 	}
-	div.caracteristica{
-		margin-bottom: 1em;
+	div{
+		position: relative;
 	}
-}
+	.breve{
+		display: block;
+	}
+	.producto ul{
+		position: relative;
+	}
+	.producto li{
+		display: block;
+	}
+	.boton{
+	background-color: #222;
+	display: inline-block;
+	color: #666;
+	}
+	.selected{
+		background-color: #222;
+		color: #2C73BA;
+	}
+}	

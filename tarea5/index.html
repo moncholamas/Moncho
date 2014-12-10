@@ -17,7 +17,8 @@
 				<h1>Web Studio 2014</h1>
 			</div>
 			<div class="grid_6">
-				<nav>
+				<div id="#nav" class="menu">|||</div>
+				<nav id="nav">
 					<ul>
 						<li><a href="#" class="actual">Inicio</a></li>
 						<li><a href="#">Novedades</a></li>
@@ -39,10 +40,12 @@
 					<h3>Producto 1</h3>
 					<div class="imgprod"></div>
 					<div class="breve">
-						<p class="caracteristica">Breve Descripcion del producto </p>
-					</div>	
-					<a href="#">Caracteristicas</a>
-					<a href="#">+</a>
+						<p class="caracteristica">Breve Descripcion del producto  </p>
+					</div>
+					<ul>
+						<li><a href="#carac1" class="boton"> + info </a></li>
+						<li><a href="#" class="boton">agregar al carrito</a></li>
+					</ul>
 				</div>
 				<div class="grid_4 producto">
 					<h3>Producto 2</h3>
@@ -50,8 +53,10 @@
 					<div class="breve">
 						<p class="caracteristica">Breve Descripcion del producto  </p>
 					</div>
-					<a href="#">Caracteristicas</a>
-					<a href="#">+</a>
+					<ul>
+						<li><a href="#carac2" class="boton"> + info </a></li>
+						<li><a href="#" class="boton">agregar al carrito</a></li>
+					</ul>
 				</div>
 				<div class="grid_4 producto">
 					<h3>Producto 3</h3>
@@ -59,15 +64,32 @@
 					<div class="breve">
 						<p class="caracteristica">Breve Descripcion del producto  </p>
 					</div>
-					<a href="#">+ caracteristicas</a>
-					<a href="#">agregar al carrito</a>
+					<ul>
+						<li><a href="#carac3" class="boton"> + info </a></li>
+						<li><a href="#" class="boton">agregar al carrito</a></li>
+					</ul>
 				</div>
-				<div class="grid_12 caracteristica">
-					<p class="inactivo"> + caracteristicas</p>
+				<div class="grid_4">
+					<div class="caracteristica mostrar" id="carac1">
+						<p class="inactivo"> + caracteristicas producto1</p>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="caracteristica mostrar" id="carac2">
+						<p class="inactivo"> + caracteristicas producto2</p>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="caracteristica mostrar" id="carac3">
+						<p class="inactivo"> + caracteristicas producto3</p>
+					</div>
 				</div>
 		</div>
 		<div class="container_12 footer">
+			<div class="grid_4">
 					<h3>Web Studio 2014</h3>
+					<div class="imgprod"></div>
+			</div>
 		</div>
 
 		</div>
